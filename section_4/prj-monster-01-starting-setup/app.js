@@ -93,6 +93,14 @@ const app = Vue.createApp({
         actionValue: value,
       });
     },
+    roleStyle(currentRole) {
+      console.log("aaaaaaaaaaaaaaaaaa");
+      if (currentRole === "player") {
+        return "log--player";
+      } else {
+        return "log--monster";
+      }
+    },
   },
 });
 app.mount("#game");
